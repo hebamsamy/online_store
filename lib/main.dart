@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:store/Screens/intro_screen.dart';
 import 'package:store/Screens/main_screen.dart';
 import 'package:store/Screens/product_Screen.dart';
 import 'package:store/Screens/profile_screen.dart';
+import 'package:store/Screens/signup_screen.dart';
+import 'package:store/Screens/students_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,9 +24,12 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => MainScreen(),
+        "/": (context) => IntroScreen(),
+        "/main": (context) => MainScreen(),
+        "/signup": (context) => SignUpScreen(),
         "/profile": (context) => ProfileScren(),
         "/product": (context) => ProductScreen(),
+        "/students": (context) => StudentsScreen(),
       },
     );
   }
