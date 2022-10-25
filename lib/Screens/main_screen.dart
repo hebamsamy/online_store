@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:store/Screens/cart_screen.dart';
 import 'package:store/pages/cart_page.dart';
 import 'package:store/pages/category_page.dart';
 import 'package:store/pages/home_page.dart';
@@ -14,7 +15,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int current = 0;
-  List<Widget> pages = [Homepage(), CategoryPage(), CartPage()];
+  List<Widget> pages = [Homepage(), CategoryPage(), CartScreen()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
